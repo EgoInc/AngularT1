@@ -1,0 +1,21 @@
+.header {
+    text-align: left;
+    background-color: #0354aa57; /* Синий фон с прозрачностью */
+    color: #fff; /* Белый цвет текста */
+    padding: 20px;
+    border-bottom: 3px solid #0354aa57; /* Немного темнее для границы */
+    box-sizing: border-box; /* Учитываем padding и border в ширине */
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #0354aa; /* Синий цвет для основного заголовка */
+  }
+  
+  .header p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #0354aa; /* Белый цвет для подзаголовка */
+  }
+  

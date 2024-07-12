@@ -1,0 +1,34 @@
+<div class="container">
+    <h2>Выберите БП для получения IDшек</h2>
+    <div class="checkbox-group">
+      <label>
+        <input type="checkbox" [(ngModel)]="selectedOptions.a">
+        а
+      </label>
+      <label>
+        <input type="checkbox" [(ngModel)]="selectedOptions.b">
+        б
+      </label>
+      <label>
+        <input type="checkbox" [(ngModel)]="selectedOptions.c">
+        в
+      </label>
+      <label>
+        <input type="checkbox" [(ngModel)]="selectedOptions.d">
+        г
+      </label>
+      <label>
+        <input type="checkbox" [(ngModel)]="selectedOptions.e">
+        д
+      </label>
+      <label>
+        <input type="checkbox" [(ngModel)]="selectedOptions.f">
+        е
+      </label>
+    </div>
+    <button (click)="getSelectedOptions()">Получить</button>
+    <div class="console">
+      <p>{{ output }}</p>
+    </div>
+  </div>
+  
