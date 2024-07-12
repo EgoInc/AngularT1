@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>Введите ID заявки</h2>
+    <input type="text" [(ngModel)]="requestId" placeholder="[&quot;SUTSPROD-123&quot;]">
+  
+    <h2>Введите состояние</h2>
+    <input type="text" [(ngModel)]="state" placeholder="Состояние">
+  
+    <button (click)="processRequest()">Отправить</button>
+  
+    <div class="console">
+      <p>{{ output }}</p>
+    </div>
+  </div>
+  

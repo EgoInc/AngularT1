@@ -1,0 +1,23 @@
+<div class="container">
+    <h2>Получение словаря</h2>
+    <input type="text" [(ngModel)]="getKey" placeholder="Ключ словаря (например, region)">
+    <button (click)="getDictionary()">Получить</button>
+    <div class="console">
+      <p>{{ getOutput }}</p>
+    </div>
+  
+    <h2>Очистка словаря</h2>
+    <input type="text" [(ngModel)]="deleteKey" placeholder="Ключ словаря (например, region)">
+    <button (click)="deleteDictionary()">Удалить</button>
+    <div class="console">
+      <p>{{ deleteOutput }}</p>
+    </div>
+  
+    <h2>Изменение словаря</h2>
+    <textarea [(ngModel)]="updateKeys" placeholder='[["timezone", "22", "GMT+7", "A"], ["timezone", "28", "GMT+9", "A"]]'></textarea>
+    <button (click)="updateDictionary()">Изменить</button>
+    <div class="console">
+      <p>{{ updateOutput }}</p>
+    </div>
+  </div>
+  
